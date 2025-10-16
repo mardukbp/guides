@@ -229,7 +229,7 @@ Also notice that `:query` and props mirror each other. Fulcro will actually warn
 
 #### Component's props
 
-The second argument to a `defsc` is the props (short for properties) - map of data passed in by the parent component, and normally derived based on the component's query. They are the same as https://reactjs.org/docs/components-and-props.html[React props], with few noteworthy additions:
+The second argument to `defsc` is the props (short for properties) - a map of data passed in by the parent component, and normally derived based on the component's query. They are the same as https://reactjs.org/docs/components-and-props.html[React props], with few noteworthy additions:
 
 * While React props must be a JavaScript map with string keys, Fulcro props - both for `defsc` components, `dom/<tag>` components, and vanilla JS components link:++{url-book}#_factory_functions_for_js_react_components++[wrapped with `interop/react-factory`] - can be and typically are a _Clojure_ map (possibly containing nested Clojure data structures) with (typically qualified) keyword keys. (Fulcro actually stores its props under "fulcro$value" in the React JS map, but that is transparent to you.)
 * You can use lazy sequences of children (produced by `map` etc.).
