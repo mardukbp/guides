@@ -579,7 +579,7 @@ The signature of `merge-component!` is:
 
 #### Targeting - Adding references to the new data to existing entities
 
-Now, what if we don't only want to add the data itself but also want to add reference(s) to the newly added data to some other, existing data entities in the client DB? `:append`, `:prepend`, and `:replace` to the rescue! We can specify as many of these as we want, providing full paths to the target property in the client DB. The paths have three (four, in the case of `:replace` of a to-many element) parts - entity name, entity ID value, the target property.
+Now, what if we don't only want to add the data itself but also want to add reference(s) to the newly added data to some other, existing data entities in the client DB? `:append`, `:prepend`, and `:replace` to the rescue! We can specify as many of these as we want, providing full paths to the target property in the client DB. The paths have three parts (four, in the case of `:replace` of a to-many element) - entity name, entity ID value, the target property.
 
 .Data targeting: append, prepend, replace
 ====
