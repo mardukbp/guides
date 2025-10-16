@@ -779,9 +779,9 @@ Let's have a look at a simple banking application that shows two lists - an over
   (pc/defresolver xyz [env _]
     {::pc/input  #{}
      ::pc/output [{:all-accounts [:account/id :account/owner :account/balance]}]}
-    {:all-accounts (vec (jdbc/execute! env "select id, owner, balance from account")))}
+    {:all-accounts (vec (jdbc/execute! env "select id, owner, balance from account"))}
   ;; and similarly for :all-customers
-  )
+  ))
 ```
 ====
 <1> We load! using Account's query because this one defines what it is we want for each of the accounts
