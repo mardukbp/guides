@@ -237,7 +237,7 @@ The second argument to `defsc` is the props (short for properties) - a map of da
 [[qualified-keywords]]
 .On qualified keywords
 ****
-We use qualified keywords a lot to avoid name conflicts and communicate ownership. If it is new to you, here is a brief summary of how to use them.
+We use qualified keywords a lot to avoid name conflicts and communicate ownership. If this is new to you, here is a brief summary of how to use them.
 
 Destructuring:
 
