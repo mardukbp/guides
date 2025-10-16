@@ -519,7 +519,7 @@ If you `transact!` multiple mutations then their `action` will be processed _in 
 
 #### Pre-study: Merging data into the client DB with `merge-component!`
 
-Load! does primarily two things: it retrieves a tree of data from the server and then normalizes it and merges it into the client DB. (Remember that the client DB is the only place where Fulcro ever looks, it does not get handed the retrieved data directly.) To understand this second part better, we will have a look at  `merge-component!`. It is not called by `load!` but it is very similar to what it does internally (and they both delegate a lot to `merge*`). It is also a useful tool on its own, for example when you want to get hardcoded data into Fulcro during development.
+`load!` does primarily two things: it retrieves a tree of data from the server and then normalizes it and merges it into the client DB. (Remember that the client DB is the only place where Fulcro ever looks, it does not get handed the retrieved data directly.) To understand this second part better, we will have a look at  `merge-component!`. It is not called by `load!` but it is very similar to what it does internally (and they both delegate a lot to `merge*`). It is also a useful tool on its own, for example when you want to get hardcoded data into Fulcro during development.
 
 Given these two components:
 
