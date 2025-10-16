@@ -327,7 +327,7 @@ The Fulcro Dev Guide has a great section on link:{url-book}#_eqlthe_query_and_mu
    ;; = the keyword  form: :person/id
 ```
 
-For a _data entity_, ident(ifier) is akin to a self-contained foreign key in SQL: it contains the (unique) name of an entity's ID property and its value, in a 2-element vector. For example: `[:person/id 123]`.
+For a _data entity_, an ident(ifier) is akin to a self-contained foreign key in SQL: it contains the (unique) name of an entity's ID property and its value, in a 2-element vector. For example: `[:person/id 123]`.
 
 For a _component_, its `:ident` is a function that returns the ident of the associated data entity, typically based on its props (captured from the component's arguments): `(fn [] [:person/id (:person/id props)])`. We call this the {url-book}#_lambda_idents[lambda form] but there are also shortcuts for common cases such as the {url-book}#_keyword_idents[keyword form] (which would simplify the previous example to just `:person/id`) and the {url-book}#_template_idents[template form]. 
 
