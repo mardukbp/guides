@@ -463,7 +463,7 @@ It is similar, only instead of `comp/factory` {url-book}#_factory_functions_for_
 
 When a component needs to change something outside of itself - such as uploading a file, changing data in the client DB, or changing data on the server-side - it does so through submitting _mutations_ to the transaction subsystem via `comp/transact!`. A mutation is essentially a _request to change_ something, represented as data and handled over to Fulcro for (asynchronous) processing.
 
-Mutations can be local (client-side) only or local and remote (though there does not need to be any local behavior defined). Even though mutation usage looks like a function call, it is not. What `transact!` expects is a sequence of _data_:
+Mutations can be local-only (client-side) or local and remote (though there does not need to be any local behavior defined). Even though mutation usage looks like a function call, it is not. What `transact!` expects is a sequence of _data_:
 
 ```clojure
 (comp/transact! app-or-component 
