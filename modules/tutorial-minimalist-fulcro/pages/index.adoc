@@ -875,7 +875,7 @@ OK, you have completed the tutorial. What now?
 . Come back and re-read this tutorial. You will likely understand it much better and get things you overlooked upon the first reading.
 . Have a look at the xref:guide-learning-fulcro:index.adoc[Guide to learning Fulcro].
 . Read real-world Fulcro code to verify and expand your understanding - the official https://github.com/fulcrologic/fulcro-template[fulcro-template] and other more less link:++https://fulcro-community.github.io/main/awesome-fulcro/README.html#_real_apps++["real apps"]
-. Clone the https://github.com/fulcrologic/fulcro/tree/develop/src/todomvc/fulcro_todomvc[Fulcro Todo MVC] application, study it, and try to extend and change it. Some ideas:
+. Clone the https://github.com/fulcrologic/fulcro/tree/main/src/todomvc/fulcro_todomvc[Fulcro Todo MVC] application, study it, and try to extend and change it. Some ideas:
   ** Add support for multiple TODO lists and the ability to select which one to show
   ** Replace the atom with an actual database for persistent data storage
   ** Make it a multi-user application: add login and web sockets to receive concurrent changes from other clients
