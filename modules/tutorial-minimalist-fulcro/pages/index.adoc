@@ -813,7 +813,7 @@ You can ask `load!` to track the status of loading using a "load marker" and you
       (df/failed?  marker) (dom/div "Failed to load :-(")
       :else (dom/div
               (dom/h3 "Friends")
-              (map ui-person (:list/people props))))))
+              (map ui-person (:list/people props)))))))
 ```
 ====
 <1> Ask `load!` to track the load with a marker called e.g. `:friends-list`
