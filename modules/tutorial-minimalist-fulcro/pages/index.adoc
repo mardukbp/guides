@@ -528,7 +528,7 @@ Given these two components:
   {:query [:address/id :address/street]
    :ident :address/id})
    ;; reminder: `:address/id` is a shorthand for
-   ;; (fn [:address/id (:address/id props)])
+   ;; (fn [] [:address/id (:address/id props)])
 
 (defsc Person [_ _]
   {:query [:person/id :person/fname 
