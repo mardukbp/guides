@@ -251,8 +251,8 @@ Destructuring:
 (let [{:keys [car/make ui/selected?]} props]
   (println make selected?))
 ;; 3. Destructure manually using <symbol> <qualified keyword> pairs:
-(let [{car-make :car/make, selected? :ui/selected?} props]
-  (println car-make selected?))
+(let [{make :car/make, selected? :ui/selected?} props]
+  (println make selected?))
 ;; all of the above print the same result: `Škoda false`
 ```
 
