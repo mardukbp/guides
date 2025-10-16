@@ -690,7 +690,7 @@ How to exclude a costly prop(s) from being loaded?::
 Imagine you want to load a Blog entity but exclude its comments so that you can load them asynchronously or e.g. when the user scrolls down. You can leverage `:without` for that: `(load! app [:blog/id 42] Blog {:without #{:blog/comments}})`. Notice that it removes the property no matter how deep in the query it is so `(load! app :all-blogs BlogList {:without #{:blog/comments}})` will also do this. Learn more in the chapter on {url-book}#IncrementalLoading[Incremental Loading].
 
 How to load only a subtree of data (f.ex. the one excluded earlier with `:without`)?::
-The opposite of the `:without` option is the function `df/load-field!`, which loads 1+ props of a component. Inside the Blog component: `(df/load-field! this [:blog/comments] {})`. Learn more in the chapter on {url-book}#IncrementalLoading[Incremental Loading]. Alternatively, you can use the load! option `:focus`, which requires more work but is more flexible.
+The opposite of the `:without` option is the function `df/load-field!`, which loads one or more props of a component. Inside the Blog component: `(df/load-field! this [:blog/comments] {})`. Learn more in the chapter on {url-book}#IncrementalLoading[Incremental Loading]. Alternatively, you can use the load! option `:focus`, which requires more work but is more flexible.
 
 How to track the loading status, i.e. loading x loaded x failed?::
 Use the option `:marker <your custom keyword or data>` to add a "marker" that will track the status for you. See the example below.
