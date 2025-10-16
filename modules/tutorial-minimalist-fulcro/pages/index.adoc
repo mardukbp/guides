@@ -485,7 +485,7 @@ That is so that the mutation can be submitted over the wire to the backend as-is
         (println "It worked!")))
   :clj 
     ;; server-side
-    (pc/defmutation delete-employee [env {id :employee/id :as params}]) ; <5>
+    (pc/defmutation delete-employee [env {id :employee/id :as params}] ; <5>
       {::pc/params #{:employee/id}}
       (db/delete-employee id)
       nil))
