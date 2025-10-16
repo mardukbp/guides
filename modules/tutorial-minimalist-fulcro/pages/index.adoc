@@ -368,7 +368,7 @@ TIP: Instead of the link:{url-book}#_lambda_mode[lambda mode] of :initial-state 
 ```
 <1> The child component must have non-nil data in the client DB, which this ensures
 <2> The parent includes the child's initial state (using the _template mode_)
-<3> Thanks to Root's init. state, the top-level key `:current-user` is added;
+<3> Thanks to Root's initial state, the top-level key `:current-user` is added;
     and because the child has an ident, its state is normalized and we end up
     with an ident pointing to the actual data
 <4> CurrentUser's data end up normalized in the `:component/id` table and it is the
