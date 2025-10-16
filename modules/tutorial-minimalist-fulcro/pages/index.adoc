@@ -731,7 +731,7 @@ and finally store the returned data in the client DB like this:
  :some-server-property <the (normalized) data>}
 ```
 
-Loading Root's query in this way does not make sense because it would put the data under a key in the client DB (such as `:some-server-property` above) while the Root needs its props to be directly at the root of the client DB. You could bypass `load!` and send the Root's query directly, as-is to avoid this problem. But normally you simply issue 1+ loads for the data of interest, with proper targeting, upon some event (such as app start).
+Loading Root's query in this way does not make sense because it would put the data under a key in the client DB (such as `:some-server-property` above) while the Root needs its props to be directly at the root of the client DB. You could bypass `load!` and send the Root's query directly, as-is to avoid this problem. But normally you simply issue one or more `load!`s for the data of interest, with proper targeting, upon some event (such as app start).
 
 Let's have a look at a simple banking application that shows two lists - an overview of all accounts and an overview of all customers:
 
