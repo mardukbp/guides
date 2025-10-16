@@ -745,7 +745,7 @@ Let's have a look at a simple banking application that shows two lists - an over
 (def ui-account (comp/factory Account))
 
 (defsc AccountList [_ {:account-list/keys [accounts]}]
- ;; Note: In practice, this would be UI-only comp. with no query
+ ;; Note: In practice, this would be a UI-only comp. with no query
  ;; and we would put the list of accounts directly under Root
  {:ident (fn [] [:component/id :AccountList])
   :query [{:account-list/accounts (comp/get-query Account)}]
