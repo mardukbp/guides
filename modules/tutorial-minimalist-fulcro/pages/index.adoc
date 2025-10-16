@@ -258,7 +258,7 @@ Destructuring:
 
 Aliases:
 
-When we require a namespace, we can give it an alias as in `(:require [my.long.ns :as myns]])` and we can use the alias in the qualified keywords - the trick is to use double instead of single colon in front of it, i.e. `::<ns alias>/kwd`. And if we leave out the alias, as in `::kwd`, it expands to the current ns, i.e. to `:<current ns>/kwd`.
+When we require a namespace, we can give it an alias as in `(:require [my.long.ns :as myns])` and we can use the alias in the qualified keywords - the trick is to use double colon instead of a single colon in front of it, i.e. `::<ns alias>/kwd`. And if we leave out the alias, as in `::kwd`, it expands to the current ns, i.e. to `:<current ns>/kwd`.
 
 ```clojure
 (ns myns (:require [my.domain.car :as car]))
