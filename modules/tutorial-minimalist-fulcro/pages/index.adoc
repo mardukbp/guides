@@ -562,7 +562,7 @@ to get the following client DB:
  :address/id {11 {:address/id 11 :address/street "Elm Street 7"}}}
 ```
 
-Notice that idents of both `Person` and `Address` were used to put the data into the correct "tables". If `Address` lacked an ident, its data would stay denormalized inside the person just as it is in the input data. (The top component passed to `merge-component!` always must have an ident.)
+Notice that idents of both `Person` and `Address` were used to put the data into the correct "tables". If `Address` lacked an ident, its data would stay denormalized inside the person just as it is in the input data. (The top component passed to `merge-component!` must always have an ident.)
 
 After having modified the client DB, `merge-component!` will also schedule re-rendering of the UI.
 
