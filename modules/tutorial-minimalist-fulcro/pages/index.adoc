@@ -223,7 +223,7 @@ _(Assuming the {url-book}#_common_prefixes_and_namespaces[same `:require` aliase
   <body to be rendered>)
 ```
 
-Notice that `defsc` produces a JS _class_, which we turn into a React factory with `comp/factory` (customary we kebab-case its name and prefix it with `ui-`). The factory can then be used to create React elements (as is demonstrated with the `ui-address` factory). (JSX does this for you so that you can use classes directly. Here we want more control.)
+Notice that `defsc` produces a JS _class_, which we turn into a React factory with `comp/factory` (customarily we kebab-case its name and prefix it with `ui-`). The factory can then be used to create React elements (as is demonstrated with the `ui-address` factory). (JSX does this for you so that you can use classes directly. Here we want more control.)
 
 Also notice that `:query` and props mirror each other. Fulcro will actually warn you if there is a mismatch between the two, thus preventing many errors.
 
