@@ -700,7 +700,7 @@ What if you need to do an additional activity after the data arrives? You can us
 
 #### When to `load!`?
 
-When to call `load!`? Fulcro does not load any data from the server for you, you have to `load!` them yourself. The main options for when to do that are:
+When to call `load!`? Fulcro does not load any data from the server for you, you have to `load!` it yourself. The main options for when to do that are:
 
 . When your {url-book}#_loading_something_into_the_db_root[application is starting]
 . In an event handler (e.g. onClick)
